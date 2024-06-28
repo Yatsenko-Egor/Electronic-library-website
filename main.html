@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Главная</title>
+        <link rel=stylesheet href=css\main.css type="text/css">
+    </head>
+    <body>
+        <div class="header-line">
+            <div class="header-image">
+                <h1 class="header">
+                    Электронная Библиотека
+                    <div class="gif"></div>
+                </h1>
+                <button class="account-button">Личный кабинет</button>
+            </div>
+            <nav>
+                <a href="#">Главная</a>
+                <a href="#">Книги</a>
+                <a href="#">Авторы</a>
+                <a href="#">Жанры</a>
+                <a href="#">Блог</a>
+            </nav>
+        </div>
+        <div class="search-block">
+            <div class="search">
+                <input type="text" class="search-field" placeholder="Введите ключевые слова">
+                <img src="icon/search.png" alt="" class="search-icon">
+            </div>
+            <button type="submit" class="search-button">Найти</button>
+        </div>
+        <div id="new-books">
+            <h2>Новинки</h2>
+        </div>
+        <script src="scripts/new_books_loader.js"></script>
+    </body>
+</html>

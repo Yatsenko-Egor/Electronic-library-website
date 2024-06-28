@@ -1,0 +1,44 @@
+{
+    "books": [
+        {
+            "image": "Yana_Vagner__Tonnel.webp",
+            "title": "Тоннель",
+            "author": "Яна Вагнер"
+        }, 
+        {
+            "image": "Den_Simmons__Zimnie_prizraki.webp",
+            "title": "Зимние призраки",
+            "author": "Дэн Симмонс"
+        }, 
+        {
+            "image": "Olga_Ptitseva__Dvesti_tretij_den_zimy.webp",
+            "title": "Двести третий день зимы",
+            "author": "Ольга Птицева"
+        }, 
+        {
+            "image": "Yan_Lyanke__Kogda_solntse_pogaslo.webp",
+            "title": "Когда солнце погасло",
+            "author": "Янь Лянькэ"
+        }, 
+        {
+            "image": "Skott_Linch__Hitrosti_Lokka_Lamory.webp",
+            "title": "Хитрости Локка Ламоры",
+            "author": "Скотт Линч"
+        }, 
+        {
+            "image": "Erin_A._Krejg__Dom_kornej_i_ruin.webp",
+            "title": "Дом корней и руин",
+            "author": "Эрин А. Крейг"
+        }, 
+        {
+            "image": "Gabriel_Garsia_Markes__Uvidimsya_v_avguste.webp",
+            "title": "Увидимся в августе",
+            "author": "Габриэль Гарсиа Маркес"
+        },
+        {
+            "image": "Dzhon_R._R._Tolkin__Priroda_Sredizemya.webp",
+            "title": "Природа Средиземья",
+            "author": "Джон Р. Р. Толкинс"
+        }
+    ]
+}

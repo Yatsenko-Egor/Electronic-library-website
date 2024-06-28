@@ -1,0 +1,20 @@
+.input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.main-field{
+
+}
+
+.search-field{
+    justify-self: center;
+    border: 10px;
+    width: 80%;
+    height: 100%;
+}
