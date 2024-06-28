@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Электронная библиотека</title>
+        <link rel=stylesheet href=css\search.css type="text/css">
+    </head>
+    <body>
+        <table class="main-field">
+            <caption class="nav-line">
+                <nav>
+                    <a href="main.html">Главная</a>
+                    <a href="#">Книги</a>
+                    <a href="#">Авторы</a>
+                    <a href="#">Жанры</a>
+                    <a href="#">Блог</a>
+                </nav>
+            </caption>
+            <tr>
+                <td class="left-screen-part">
+                    <table class="search-field">
+                        <caption class="search-header">Поиск</caption>
+                        <tr>
+                            <td>
+                                <table class="search-line">
+                                    <tr>
+                                        <td class="icon-cell">
+                                            <img class="magnifier-icon" src="icon/magnifier.svg">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="search-input" placeholder="Поиск" name="keywords">
+                                        </td>
+                                        <td class="icon-cell">
+                                            <img class="arrow-icon" src="icon/arrow.svg">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <script src="scripts/find_book_by_genre.js"></script>
+                    </table>
+                </td>
+                <td class="right-screen-part">
+                    <table class="search-params">
+                        <tr>
+                            <td>
+                                <table>
+                                    <caption>Область поиска</caption>
+                                    <form>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkbox1">Авторы
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkbox2">Названия
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkbox3">Текст
+                                            </td>
+                                        </tr>
+                                    </form>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <caption>Год издания</caption>
+                                    <form>
+                                        <tr>
+                                            <td>
+                                                С <input type="number" min="0" max="2024" value="2000" name="from_whatyear"/>
+                                                До <input type="number" min="0" max="2024" value="2024" name="until_whatyear"/>
+                                            </td>
+                                        </tr>
+                                    </form>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <caption>Жанр</caption>
+                                    <form>
+                                        <tr>
+                                            <td>
+                                                <select name="genre">
+                                                    <option value="none">Выберите жанр</option>
+                                                    <option value="prose">Проза</option>
+                                                    <option value="poetry">Поэзия</option>
+                                                    <option value="detectives">Детективы</option>
+                                                    <option value="fiction" >Фантастика</option>
+                                                    <option value="romance_novels">Любовные романы</option>
+                                                    <option value="business_literature">Бизнес-литература</option>
+                                                    <option value="children_s_books">Детские книги</option>
+                                                    <option value="nonfiction_literature">Документальная литература</option>
+                                                    <option value="scientific_and_educational_literature">Научно-образовательная литература</option>
+                                                    <option value="religious_literature">Религиозная литература</option>
+                                                    <option value="folklore">Творчество и фольклор</option>
+                                                    <option value="humor">Юмор</option>
+                                                    <option value="other">Другое</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </form>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+    </body>
+</html>

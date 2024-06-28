@@ -1,20 +1,88 @@
-.input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-right: 10%;
-    margin-left: 10%;
-    border: 1px solid black;
-    border-radius: 30px;
+body{
+    background: #b5ac93;
+}
+
+.nav-line{
+    background-image: url(../img/header_fon.png);
+    height: 10vh;
+    background-color: #000000;
+    text-align: center;
+    caption-side: top;
+    display: table-caption;
+    vertical-align: middle;
+}
+
+.search-header{
+    text-align: left;
+    font-size: 1vw;
 }
 
 .main-field{
-
+    width: 100%;
+    height: 100%;
+    background: #b5ac93;
+    border-bottom: #000000 1px solid;
 }
 
-.search-field{
-    justify-self: center;
-    border: 10px;
-    width: 80%;
-    height: 100%;
+.nav-line nav{
+    word-spacing: 1vw;
+    display: inline-block;
+}
+
+.nav-line nav a{
+    color: white;
+    text-decoration-line: none;
+    font-size: 1.2vw;
+    line-height: 10vh;
+}
+
+.nav-line nav a:hover{
+    color:red;
+}
+
+.search-field, .search-params {
+    vertical-align: top;
+    width: 100%;
+}
+
+
+.left-screen-part{
+    width: 100%;
+    border-right: 1px black solid;
+    table-layout: fixed;
+}
+
+.right-screen-part{
+    vertical-align: top;
+    width: auto;
+    white-space: nowrap;
+}
+
+.book{
+    border: 1px black solid;
+    width: 280vw;
+}
+
+.book-image{
+    width: 4vw;
+    height: 10vh;
+}
+
+.arrow-icon, .magnifier-icon{
+    width: 1.5vw;
+}
+
+.search-input{
+    width:100%;
+    border: 0px;
+}
+
+.search-line{
+    background-color: white;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.icon-cell{
+    width: 1.5vw;
 }
