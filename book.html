@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Электронная библиотека</title>
+        <link rel="stylesheet" href="css/book.css" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <a href="main.html">Главная</a>
+                <a href="#">Книги</a>
+                <a href="#">Авторы</a>
+                <a href="#">Жанры</a>
+                <a href="main.html#news">Новости</a>
+            </nav>
+        </div>
+        <div id="pdf">
+            <canvas id="page"></canvas>
+        </div>
+        <div id="switches">
+            <button class="switch-button" id="prev">Назад</button>
+            <span id="page-num"></span>
+            <button class="switch-button" id="next">Вперед</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+        <script src="scripts/book_display.js"></script>
+
+        <button class="open-controller-button" onclick="controlWindow()">Музыка</button>
+        <div class="music-control-field">
+            <audio id="audio-player" preload="auto" controls>
+              <source src="/music/Justus Rümenapp — Rümenapp_ Childhood.mp3" type="audio/mp3">
+            </audio>
+            <div class="control-buttons">
+                <button class="music-button" onclick="playAudio()">Воспроизвести</button>
+                <button class="music-button" onclick="pauseAudio()">Пауза</button>
+                <button class="music-button" onclick="stopAudio()">Стоп</button>
+                <button class="music-button" onclick="prevTrack()">Предыдущий трек</button>
+                <button class="music-button" onclick="nextTrack()">Следующий трек</button>
+            </div>
+        </div>
+        <script src="scripts/music control.js"></script>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Главная</title>
-        <link rel=stylesheet href=css\main.css type="text/css">
+        <link rel=stylesheet href=css/main.css type="text/css">
     </head>
     <body>
         <div class="header-line">
@@ -11,14 +11,15 @@
                     Электронная Библиотека
                     <div class="gif"></div>
                 </h1>
-                <button class="account-button">Личный кабинет</button>
+                <button class="account-button" id="loginButton">Войти</button>
+                <button class="account-button" id="registerButton">Зарегистрироваться</button>
             </div>
             <nav>
                 <a href="#">Главная</a>
-                <a href="#">Книги</a>
+                <a href="search.html">Книги</a>
                 <a href="#">Авторы</a>
                 <a href="#">Жанры</a>
-                <a href="#">Блог</a>
+                <a href="#news">Новости</a>
             </nav>
         </div>
         <div class="search-block">
@@ -28,9 +29,59 @@
             </div>
             <button type="submit" class="search-button">Найти</button>
         </div>
-        <h2>Новинки</h2>
+        <h2 class="new-books-header">Новинки</h2>
         <div id="new-books">
         </div>
         <script src="scripts/new_books_loader.js"></script>
+        <div id="news" class="news-block">
+            <h2 class="news-header">Новости</h2>
+            <div class="news-item">
+                <div class="news-media">
+                    <iframe src="https://www.youtube.com/embed/uqWMSXi09v8?si=DN0DHT0GH_pdVDAu"></iframe>
+                </div>
+                <div class="news-caption">
+                    <h3>ЧТО ПОЧИТАТЬ ЛЕТОМ - СПИСОК ДЛЯ ЧТЕНИЯ САРЫ АДАМС</h3>
+                    <p>Книжные новости от Андрея Криволапова - лучший способ узнать, что почитать, 
+                        на каких авторов обратить внимание и какие книжные 
+                        новинки поискать на полках магазинов. Фантастика, фэнтези, детектив, триллер, 
+                        нуар, классика, история, биографии, наука - обо всем этом в "Сигнальном экземпляре".</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-media">
+                    <img src="img/news/w240h180-crop-stretch-31840fb1.jpg"></img>
+                </div>
+                <div class="news-caption">
+                    <h3>Кто написал первый детектив?</h3>
+                    <p>Забираем лавры первопроходца у Эдгара По и отдаём… Софоклу.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="register-window" class="modal-window">
+            <div class="modal-content">
+                <span class="close-window">&times;</span>
+                <h2>Форма регистрации</h2>
+                <div class="register-block">
+                    <div class="register-form">
+                        <form onsubmit="return checkForm()">
+                            <label for="name">Имя<span class="red-start">*</span>:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="password">Пароль<span class="red-start">*</span>:</label><br>
+                            <input type="password" id="password" name="password"><br>
+                            <label for="confirm_password">Подтвердите пароль<span class="red-start">*</span>:</label><br>
+                            <input type="password" id="confirm_password" name="confirm_password"><br>
+                            <label for="email">Электронная почта<span class="red-start">*</span>:</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <input class ="start-registration"type="submit" value="Зарегистрироваться">
+                        </form>
+                    </div>
+                    <div class="register-img">
+                        <img src="img/library.jpg" alt="Библиотека" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/scripts/registration.js"></script>
     </body>
 </html>

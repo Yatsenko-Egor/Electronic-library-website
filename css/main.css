@@ -49,14 +49,25 @@ nav a:hover{
 
     top: 3%;
     right: 1%;
-    padding: 1% 1%;
+    padding: 0.5% 0.5%;
     background-color: #2c2f36;
     color: white;
     border: none;
     border-radius: 1vw;
     cursor: pointer;
     outline: none;
+    box-sizing: border-box;
 }
+
+#loginButton {
+    right: 10%;
+}
+
+#registerButton {
+    right: 1%;
+}
+
+
 .account-button:hover {
     background-color: #25282e;
 }
@@ -131,7 +142,7 @@ nav a:hover{
     
 }
 
-h2 {
+.new-books-header {
     text-align: center;
     color: #333;
     margin-top: 7%;
@@ -168,4 +179,114 @@ h2 {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.modal-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 10vh;
+}
+
+.modal-content {
+    background-color: #c3b091;
+    margin: 5% auto;
+    border: 1px solid #888;
+    padding: 1%;
+    width: 30%;
+}
+
+.start-registration{
+    background-color: #000;
+    color: white;
+}
+
+.red-start{
+    color: red;
+}
+
+.close-window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-window :hover,
+.close-window :focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.register-block{
+    display: flex;
+}
+
+.register-form{
+    width: 50%;
+    width: min-content;
+    margin-right: 1vw;
+}
+
+.register-img {
+    width: max-content;
+}
+
+.register-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.news-header {
+    text-align: center;
+    color: #333;
+    margin-top:2%;
+    margin-bottom: 0.5%;
+}
+
+.news-block {
+    margin-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 0.5vh;
+}
+
+.news-media {
+    margin-right: 1vw;
+}
+
+.news-media img {
+    width: 100%;
+    height: auto;
+}
+
+.news-media iframe {
+    width: 100%;
+    height: auto;
+}
+
+
+.news-caption {
+    padding-left: 1vw;
+}
+
+.news-caption h3 {
+    margin: 0;
+}
+
+.news-caption p {
+    margin-top: 0.5vh;
 }

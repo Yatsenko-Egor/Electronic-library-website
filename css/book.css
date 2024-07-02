@@ -1,0 +1,87 @@
+body {
+    background: #b5ac93;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.header {
+    background-color: #333;
+    text-align: center;
+    background-image: url(../img/header_fon.png);
+    height: 10vh;
+    width: 100%;
+    word-spacing: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    box-sizing: border-box;
+    top: 0;
+}
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2vw;
+}
+.header nav a:hover {
+    color: red;
+
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+#pdf{
+    width: 60%;
+    border: 1px solid black;
+    margin-top: 15vh;
+}
+
+#switches {
+    width: 100%;
+    padding: 1vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+.open-controller-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.switch-button{
+    background-color: #000;
+    color: #fff;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.music-button {
+    background-color: #000;
+    color: #fff;
+}
+.music-control-field {
+    display: none;
+    position: fixed;
+    top: 55%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 1vw;
+    z-index: 2;
+}

@@ -5,6 +5,9 @@ fetch('../data/new_books.json')
                     data.books.forEach(book => {
                         const item = document.createElement('div');
                         item.classList.add('book');
+                        item.addEventListener('click', function() {
+                            window.open("../book.html");
+                        });
                         
                         const image = document.createElement('img');
                         image.src = "../img/new_books/" + book.image;
